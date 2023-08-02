@@ -22,8 +22,7 @@ public class T10FileEncordingTest {
         참고)
        ASCII => extended ASCII(ISO 8859-1) => 조합형, 완성형
        		 => 윈도우계열 : CP949		=> 유니코드(UTF-8)
-       			유닉스계열 : EUC-KR
-       	
+       			유닉스계열 : EUC-KR   	
  */
 	
 	public static void main(String[] args) {
@@ -31,13 +30,13 @@ public class T10FileEncordingTest {
 		InputStreamReader isr = null;
 		
 		try {
-			// 바이트 기반..
+			// 바이트 기반 읽기
 			//fis = new FileInputStream("d:/D_Other/test_ansi.txt");
 			fis = new FileInputStream("d:/D_Other/test_utf8.txt");
 			
 			// InputStreamReader는 파일의 인코딩 방식을 지정할 수 있다
-			// 형식) new InputStreamReader(바이트 기반 기본스트림, 인코딩 방식)
-			//isr = new InputStreamReader(fis, "cp949"); // 보조 스트림 객체 준비
+			// 형식) new InputStreamReader(바이트 기반 기본스트림 => 문자 기반 스트림처럼 사용, 인코딩 방식)
+			// isr = new InputStreamReader(fis, "cp949"); // 보조 스트림 객체 준비
 			isr = new InputStreamReader(fis, "utf-8");
 			
 			int data = 0;

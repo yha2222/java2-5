@@ -27,7 +27,7 @@ public class T01FileTest {
 		
 		// 2. new File(File parent, String child)
 		//		=> 'parent' 디렉토리 안에 있는 'child' 파일 또는 디렉토리를 갖는다.
-		File file3 = new File(file2, "test.txt");  //d:/D_Other 안에 있는 text.txt 폴더
+		File file3 = new File(file2, "test.txt");  // d:/D_Other 안에 있는 text.txt 폴더
 		System.out.println(file3.getName() + "의 용량(크기) : " + file3.length()); //해당 파일 용량
 		
 		// 3. new File(String parent, String child)
