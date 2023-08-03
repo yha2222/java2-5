@@ -11,6 +11,7 @@ public class T05FileStreamTest {
 		FileInputStream fis = null;
 		
 		try {
+			
 			fis = new FileInputStream("d:/D_Other/test2.txt");
 			
 			int data = 0;

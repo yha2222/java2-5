@@ -22,7 +22,6 @@ public class T04ByteArrayIOTest {
 		// 4바이트까지 한번에 읽을 수 있음 => 한번씩 읽던 거 네 개씩 읽음
 		//    =단점=> 4개씩 무조건 끊느라 쓰레기 데이터까지 붙음 ex. temp => [8, 9, 6, 7]
 		while((readBytes = bais.read(temp)) != -1) {
-			
 			System.out.println(" temp => " + Arrays.toString(temp));
 			baos.write(temp, 0, readBytes);   // 첫번째 데이터부터 => 읽은 write 개수만큼만
 		}
@@ -31,6 +30,6 @@ public class T04ByteArrayIOTest {
 		
 		System.out.println(" inSrc => " + Arrays.toString(inSrc));
 		System.out.println(" ourSrc => " + Arrays.toString(outSrc));
-		//Stream 객체 이용 => byte 단위로 읽어서 차례로 저장
+		
 	}
 }

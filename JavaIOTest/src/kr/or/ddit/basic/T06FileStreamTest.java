@@ -9,6 +9,7 @@ import java.io.IOException;
 public class T06FileStreamTest {
 
 	public static void main(String[] args) {
+		
 		// 파일에 내용물 저장
 		FileOutputStream fos = null;
 		

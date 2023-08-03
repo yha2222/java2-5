@@ -30,7 +30,7 @@ public class T16ObjectStreamTest {
 			oos.writeObject(mem2);  
 			oos.writeObject(mem3);  
 			oos.writeObject(mem4);  
-			// 객체를 파일에 저장 끋
+			// 객체를 파일에 저장 끝나면
 			System.out.println("객체 쓰기 작업 완료!"); 
 			
 		} catch (IOException ex) {

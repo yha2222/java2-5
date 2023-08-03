@@ -28,16 +28,16 @@ public class T03ByteArrayIOTest {
 		
 		int data = 0;		//읽어 온 데이터를 저장할 변수
 		
-		// read()메서드 => byte단위로 데이처를 읽어 와 int형으로 반환
+		// read()메서드 => byte단위로 데이터를 읽어 와 int형으로 반환
 		//				더이상 읽을 데이터가 없으면 -1 반환
 		while((data = bais.read()) != -1) {
 			baos.write(data);    // 내부 저장?
 		}
 		
+		//Stream 객체 이용 => byte 단위로 읽어서 차례로 저장
 		outSrc = baos.toByteArray();
 		
 		System.out.println(" inSrc => " + Arrays.toString(inSrc));
 		System.out.println(" ourSrc => " + Arrays.toString(outSrc));
-		//Stream 객체 이용 => byte 단위로 읽어서 차례로 저장
 	}
 }
