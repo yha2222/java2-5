@@ -8,8 +8,8 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 // 객체 입출력 보조 스트림(직렬화와 역직렬화) - 객체를 IO 작업
-// 직렬화 : 객체 저장 => 필요할 때 읽기 - object 
-// 역직렬화 : 데이터 읽어서 원래 객체 형태 갖추기 
+// 직렬화 : 연속적 흐름으로 늘어놓괴 바이트 기반으로 writeObject -> 객체 저장 => 필요할 때 읽기 - object 
+// 역직렬화 : 데이터 읽어서 원래 객체 형태 복원
 public class T16ObjectStreamTest {
 
 	public static void main(String[] args) {

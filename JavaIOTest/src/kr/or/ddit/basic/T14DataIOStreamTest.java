@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-// 기본타입 입출력 보조 스트림 : int 저장 => read 4번(4byte)
+// 기본타입(문자열 포함) 입출력 보조 스트림 : int 저장 => read 4번(4byte)
 public class T14DataIOStreamTest {
 	public static void main(String[] args) {
 		
@@ -35,7 +35,7 @@ public class T14DataIOStreamTest {
 			}
 		}
 		
-		// 출력한 데이터 읽어와 보기
+//		 출력한 데이터 읽어와 보기
 		
 		FileInputStream fis = null;
 		DataInputStream dis = null;

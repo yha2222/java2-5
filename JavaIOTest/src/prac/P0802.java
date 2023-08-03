@@ -38,7 +38,7 @@ public class P0802 {
 			System.out.println(file5.getName() + "만들기 실패");
 		}
 		
-		File file6 = new File("d:/Prac/test/java/src");
+		File file6 = new File("d:/Prac/src");
 		if(file5.mkdirs()) {
 			System.out.println(file6.getName() + "만들기 성공");
 		}else {
